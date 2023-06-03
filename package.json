@@ -1,0 +1,30 @@
+{
+  "name": "ts-express-nodemon",
+  "version": "1.0.0",
+  "description": "",
+  "module": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec ts-node src/index.ts --ignore resources/",
+    "migrate:latest": "npx ts-node ./node_modules/.bin/knex migrate:latest",
+    "db:setup": "npx ts-node ./node_modules/.bin/knex migrate:latest && npx ts-node ./node_modules/.bin/knex seed:run"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/knex": "^0.16.1",
+    "@types/node": "^20.2.1",
+    "@types/puppeteer": "^7.0.4",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "knex": "^2.4.2",
+    "puppeteer": "^20.2.1",
+    "sqlite3": "^5.1.6"
+  }
+}
