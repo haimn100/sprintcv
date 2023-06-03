@@ -1,7 +1,7 @@
 import puppeteer, { Browser, ElementHandle, Page } from "puppeteer";
-import { JobLog, JobLogStatus } from "@src/types/JobLog";
-import { JobLogRepository } from "@src/data/repositories/JobLogRepository";
-import { Provider, ProviderRepository } from "@src/data/repositories/ProviderRepository";
+import { JobLog, JobLogStatus } from "../types/JobLog";
+import { JobLogRepository } from "../data/repositories/JobLogRepository";
+import { Provider, ProviderRepository } from "../data/repositories/ProviderRepository";
 
 
 export type JobArticle = {

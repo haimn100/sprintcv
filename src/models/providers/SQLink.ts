@@ -1,11 +1,11 @@
 import path from "path";
-import JobProvider, { JobArticle } from "@src/models/JobProvider";
+import JobProvider, { JobArticle } from "../JobProvider";
 import { Page } from "puppeteer";
-import { getResumeFilePath, sleep } from "@src/utils";
+import { getResumeFilePath, sleep } from "../../utils";
 
 export class SQLink extends JobProvider {
     protected _name: string = "sqlink.com";
-    protected _base: string;
+    protected _base: string = "https://sqlink.com";
 
     withLogin(): boolean {
         return false;

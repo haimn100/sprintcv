@@ -1,4 +1,4 @@
-import JobProvider, { JobArticle } from "@src/models/JobProvider";
+import JobProvider, { JobArticle } from "../JobProvider";
 
 export default class JobMaster extends JobProvider {
     protected _base: string = 'https://jobmaster.co.il';
