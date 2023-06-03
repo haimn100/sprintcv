@@ -45,6 +45,7 @@ currently the app will look for only one pdf file named resume.pdf
 
 5. Build and run the project:
    ```shell
+   npm run db:setup
    npm run dev
    ```
 
