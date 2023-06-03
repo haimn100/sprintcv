@@ -53,5 +53,5 @@ export function getStringByteSize(str: string) {
 }
 
 export function getResumeFilePath(): string {
-    return path.resolve(__dirname, '../../../service/resources/resume.pdf');
+    return path.resolve(__dirname, '../../resources/resume.pdf');
 }
