@@ -38,7 +38,12 @@ To set up and run the SprintCV project, follow these steps:
    - Update the database configuration in `knexfile.ts` to match your environment.
    - Customize the Puppeteer automation logic in the relevant files (`src/puppeteer.ts`, etc.) to fit your requirements.
 
-4. Build and run the project:
+4. Add the resume file:
+
+Place your resume file in the resources folder of the project.
+currently the app will look for only one pdf file named resume.pdf
+
+5. Build and run the project:
    ```shell
    npm run dev
    ```
