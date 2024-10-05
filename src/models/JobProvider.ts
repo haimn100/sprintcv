@@ -68,6 +68,7 @@ abstract class JobProvider {
 
     abstract navigateToJobSearchPage(): Promise<void>;
 
+
     abstract getSearchTerms(): Promise<string[]>;
 
     alreadyApplied(jid: string) {
@@ -85,6 +86,10 @@ abstract class JobProvider {
     async getAppliedJobsIds(): Promise<Set<string>> {
         const provider = await this.provider();
         return await this._jobLogRepository.getAppliedJobsByProvider(provider.id, 200);
+    }
+
+    async navigateTo(url: string): Promise<void> {
+        await this._page.goto(url);
     }
 
     addJobLog(jid: string, title: string, error?: string) {

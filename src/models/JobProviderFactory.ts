@@ -26,8 +26,7 @@ export default class JobProviderFactory {
 
     providersNames(): string[] {
         return [
-            'jobmaster.co.il',
-            'sqlink.com'
+            'jobmaster.co.il'
         ];
     }
 }

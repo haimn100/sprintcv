@@ -5,7 +5,7 @@
   "module": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --exec ts-node src/index.ts --ignore resources/",
+    "dev": "ts-node src/index.ts --ignore resources/",
     "migrate:latest": "npx ts-node ./node_modules/.bin/knex migrate:latest",
     "db:setup": "npx ts-node ./node_modules/.bin/knex migrate:latest && npx ts-node ./node_modules/.bin/knex seed:run"
   },
